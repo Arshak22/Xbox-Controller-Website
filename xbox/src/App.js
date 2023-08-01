@@ -1,10 +1,10 @@
 import React from "react";
-import ThreeScene from "./Components/ThreeScene";
+import FirstHeroSection from "./Components/FirstHeroSection";
 
 function App() {
   return (
     <div>
-      <ThreeScene />
+      <FirstHeroSection />
     </div>
   );
 }

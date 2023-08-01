@@ -1,0 +1,16 @@
+.firstHeroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3em;
+}
+
+.col-1L {
+    width: 40%;
+}
+
+.col-1R {
+    width: 60%;
+}
