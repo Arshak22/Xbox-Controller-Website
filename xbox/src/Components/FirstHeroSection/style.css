@@ -5,6 +5,10 @@
     width: 100%;
     height: auto;
     padding: 3em;
+    background: url(../../assets/images/blurGreen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .col-1L {
@@ -12,5 +16,31 @@
 }
 
 .col-1R {
+    position: relative;
     width: 60%;
+}
+
+.firstFrame {
+    max-width: 100%;
+    width: 100%;
+    transform: scale(1.4);
+    position: absolute;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+.firstHeroSection canvas {
+    height: 700px !important;
+    width: auto !important;
+    position: relative;
+    z-index: 5;
+}
+
+.firstHeroSection canvas:hover {
+    cursor: grab;
+}
+
+.firstHeroSection canvas:active {
+    cursor: grabbing;
 }
