@@ -7,8 +7,9 @@
 }
 
 :root {
-  --neon-green: #39FF14;
+  --neon-green: #3fea21;
   --main-black: #050801;
+  --main-white: #dbdbdb;
   --main-font: 'Orbitron', sans-serif;
 }
 
@@ -29,14 +30,14 @@ body {
 body::before {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   content: "";
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: url(./assets/images/abstract_dark_gray_template_blank_space_dark_gradient_wall_dark.jpg);
+  background: url(./assets/images/mainBG.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
