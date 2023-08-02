@@ -5,42 +5,63 @@
     width: 100%;
     height: auto;
     padding: 3em;
-    background: url(../../assets/images/blurGreen.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background: url(../../assets/images/blurGreen.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; */
 }
-
-.col-1L {
-    width: 40%;
-}
-
-.col-1R {
+  
+.col-1L, .col-1R {
     position: relative;
-    width: 60%;
+    width: 50%;
 }
-
+  
 .firstFrame {
     max-width: 100%;
     width: 100%;
-    transform: scale(1.4);
+    transform: scale(1.8);
     position: absolute;
+    top: 3em;
     user-select: none;
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
 }
-
+  
 .firstHeroSection canvas {
     height: 700px !important;
     width: auto !important;
     position: relative;
     z-index: 5;
+    animation-name: moveUpDown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
+  
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+  
 .firstHeroSection canvas:hover {
     cursor: grab;
 }
-
+  
 .firstHeroSection canvas:active {
     cursor: grabbing;
+}
+  
+.col-1L h1 {
+    color: #ffffff;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--main-font);
 }
