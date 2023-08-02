@@ -7,7 +7,7 @@
 }
 
 :root {
-  --neon-green: #3fea21;
+  --neon-green: #42f123;
   --main-black: #050801;
   --main-white: #dbdbdb;
   --main-font: 'Orbitron', sans-serif;
@@ -42,7 +42,7 @@ body::before {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  filter: brightness(0.9);
+  filter: brightness(0.8);
 }
 
 body::-webkit-scrollbar {
