@@ -62,6 +62,12 @@ code {
 	color: var(--main-black);
 }
 
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
 .neon-btn {
   position: relative;
   display: inline-block;

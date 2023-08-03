@@ -56,12 +56,12 @@
     height: 3.5px;
     background-color: var(--neon-green); 
     transition: width 0.5s ease;
-  }
+}
   
-  .underline-hover:hover {
+.underline-hover:hover {
     color: var(--neon-green);
-  }
+}
 
-  .underline-hover:hover::after {
+.underline-hover:hover::after {
     width: 100%;
-  }
+}
