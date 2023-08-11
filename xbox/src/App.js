@@ -2,7 +2,7 @@ import React from "react";
 import FirstHeroSection from "./Components/FirstHeroSection";
 import ImportantInfo from "./Components/ImportantInfo";
 import HighlightedProducts from "./Components/HighlightedProducts";
-
+import HomeProducts from "./Components/HomeProducts";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <FirstHeroSection/>
       <ImportantInfo/>
       <HighlightedProducts/>
+      <HomeProducts/>
     </div>
   );
 }
