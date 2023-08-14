@@ -5,10 +5,10 @@ export default function ListProduct(product) {
     return(
         <div className="list_product">
             <div className="product_image_block">
-                <img src={product.product.image} alt={product.product.image} className="productImage"/>
+                <img src={product.product.image} loading="lazy" alt={product.product.image} className="productImage"/>
             </div>
             <div className="product_hover_image_block">
-                <img src={product.product.hover_image} alt={product.product.hover_image} className="productImage"/>
+                <img src={product.product.hover_image} loading="lazy" alt={product.product.hover_image} className="productImage"/>
             </div>
             <div className="productInfo">
                 <h3 className="product_name">{product.product.name}</h3>

@@ -5,6 +5,7 @@
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    z-index: 3;
 }
 
 .list_product::before {
@@ -18,9 +19,19 @@
     left: 0;
     bottom: 0;
     background-color: #72727261;
+    background-image: none;
     border-radius: inherit;
-    filter: opacity(0.3);
+    filter: opacity(0.35);
     z-index: -1;
+    transition: all 0.8s ease;
+}
+
+.list_product:hover::before {
+    background-image: url(../../assets/images/BlurySmokeElement.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.7) brightness(0.5);
 }
 
 .product_image_block, .product_hover_image_block {
@@ -43,6 +54,7 @@
 .productImage {
     max-width: 100%;
     width: 100%;
+    filter: contrast(1.3) brightness(1.5) drop-shadow(15px 15px 8px var(--main-black));
 }
 
 .productInfo {
@@ -81,9 +93,9 @@
 
 .addToCart {
     position: absolute;
-    opacity: 0;
+    display: none;
     right: 20px;
-    bottom: 11em;
+    bottom: 34%;
     background-color: var(--neon-green);
     color: var(--main-black);
     font-family: var(--second-font);
@@ -98,5 +110,5 @@
 }
 
 .list_product:hover .addToCart {
-    opacity: 1;
+    display: block;
 }
