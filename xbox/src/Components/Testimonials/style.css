@@ -5,7 +5,8 @@
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    padding: 2em 5em;
+    padding: 0em 5em;
+    top: -3em;
 }
 
 .testimonials .second-heading {
