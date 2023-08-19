@@ -1,22 +1,19 @@
 import React from "react";
-import FirstHeroSection from "./Components/FirstHeroSection";
-import ImportantInfo from "./Components/ImportantInfo";
-import HighlightedProducts from "./Components/HighlightedProducts";
-import HomeProducts from "./Components/HomeProducts";
-import Guidelines from "./Components/Guidlines";
-import Testimonials from "./Components/Testimonials";
-import Footer from "./Components/Footer";
+import { Routes, Route } from "react-router-dom";
+import { ROUTE_NAMES } from "./Routes";
+import Layout from "./Pages/Layout";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div>
-      <FirstHeroSection/>
-      <ImportantInfo/>
-      <HighlightedProducts/>
-      <HomeProducts/>
-      <Guidelines/>
-      <Testimonials/>
-      <Footer/>
+      <Routes>
+          <Route element={<Layout />}>
+            <Route path={ROUTE_NAMES.HOME} element={<Home />} />
+            {/* <Route path={ROUTE_NAMES.SHOP} element={<Shop />} />
+            <Route path={ROUTE_NAMES.FAQ} element={<FAQ />} /> */}
+          </Route>
+      </Routes>
     </div>
   );
 }
