@@ -1,4 +1,6 @@
 import {React, useState} from "react";
+import { NavLink } from "react-router-dom";
+import { ROUTE_NAMES } from "../../Routes";
 import './style.css';
 import ListProduct from "../ListProduct";
 
@@ -155,13 +157,13 @@ export default function HomeProducts() {
                 </div>
             </div>
             <div className="shopBtn">
-                <a href="#" className='neon-btn'>
+                <NavLink to={ROUTE_NAMES.SHOP} end className='neon-btn'>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     View Shop
-                </a>
+                </NavLink>
             </div>
         </div>
     );

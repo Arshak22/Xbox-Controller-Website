@@ -54,7 +54,6 @@
 .footerMenu {
     display: flex;
     margin-top: 30px;
-    color: var(--main-white);
     font-family: var(--main-font);
     font-size: 25px;
     letter-spacing: 1px;
@@ -64,4 +63,14 @@
 
 .footerMenu li {
     margin: 0 20px;
+}
+
+.footerMenu a {
+    text-decoration: none;
+    color: var(--main-white);
+    transition: all 0.5s ease;
+}
+
+.footerMenu a:hover {
+    color: var(--neon-green);
 }

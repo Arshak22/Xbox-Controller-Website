@@ -1,15 +1,15 @@
-import { React, useState, useEffect } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { React, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { ROUTE_NAMES } from "../../Routes";
 import './style.css';
 
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
+import { ImCart } from "react-icons/im";
 
 import MainLogo from '../../assets/images/Logo.png';
 
 export default function Header() {
-    // const [hideNav, setHideNav] = useState(false);
     const [activeBar, setActiveBar] = useState(true);
 
     const handleBar = () => {
@@ -18,7 +18,7 @@ export default function Header() {
 
     return(
         <>
-        <nav>
+        <nav className="menu">
                 <NavLink to={ROUTE_NAMES.HOME} end><img src={MainLogo} alt="MainLogo" id="mainLogo" /></NavLink>
                 <div>
                     <ul id="navbar" className={!activeBar ? "activeMenu": null}>
@@ -38,6 +38,16 @@ export default function Header() {
                             </NavLink>
                         </li>
                     </ul>
+                </div>
+                <div className="headerBtns">
+                    <ImCart className="cartIcon"/>
+                    <NavLink to={ROUTE_NAMES.HOME} end className='neon-btn'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Sign In
+                    </NavLink>
                 </div>
                 <div id="mobile">
                         {activeBar ? <FaBars className="bars" onClick={handleBar}/>: <FaTimes className="close" onClick={handleBar}/>}

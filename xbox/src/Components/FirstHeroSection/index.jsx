@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
+import { ROUTE_NAMES } from "../../Routes";
 import './style.css';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage } from '@react-three/drei';
@@ -11,13 +13,13 @@ export default function FirstHeroSection() {
     <div className='firstHeroSection'>
       <div className='col-1L'>
         <h1>Unleash Your Gaming Potential</h1>
-        <a href="#" className='neon-btn'>
+        <NavLink to={ROUTE_NAMES.SHOP} end className='neon-btn'>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Start Gaming
-        </a>
+        </NavLink>
       </div>
       <div className='col-1R'>
         <img src={FirstFrame} alt='firstFrame' className='firstFrame' />
