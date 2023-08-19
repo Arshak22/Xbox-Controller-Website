@@ -5,6 +5,7 @@ import HighlightedProducts from "./Components/HighlightedProducts";
 import HomeProducts from "./Components/HomeProducts";
 import Guidelines from "./Components/Guidlines";
 import Testimonials from "./Components/Testimonials";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HomeProducts/>
       <Guidelines/>
       <Testimonials/>
+      <Footer/>
     </div>
   );
 }
