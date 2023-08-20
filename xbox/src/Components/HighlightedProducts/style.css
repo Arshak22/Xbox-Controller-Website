@@ -57,3 +57,10 @@
 .slick-slide.slick-center:hover {
     transform: scale(0.9);
 }
+
+@media screen and (max-width: 500px) {
+    .highlightedProducts::before {
+        background-size: 280%;
+        background-position: top;
+    }
+}

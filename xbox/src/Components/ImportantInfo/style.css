@@ -66,3 +66,29 @@
 .underline-hover:hover::after {
     width: 100% !important;
 }
+
+@media screen and (max-width: 500px) {
+    .importantInfoSection {
+        display: block;
+        padding: 1em;
+        margin-top: -14em;
+    }
+
+    .col-2L, .col-2R {
+        width: 100%;
+    }
+
+    .col-2R h1 {
+        font-size: 30px;
+    }
+
+    .col-2R p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .underline-hover {
+        font-size: 17px !important;
+        letter-spacing: 2px !important;
+    }
+}

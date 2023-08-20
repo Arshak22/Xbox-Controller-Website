@@ -64,3 +64,24 @@
     letter-spacing: 5px;
     font-family: var(--main-font);
 }
+
+@media screen and (max-width: 500px) {
+    .firstHeroSection {
+        display: block;
+        padding: 1em;
+        margin-top: 3em;
+    }
+
+    .col-1L, .col-1R {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .col-1L h1 {
+        font-size: 40px;
+    }
+
+    .firstHeroSection canvas {
+        top: -11em;
+    }
+}

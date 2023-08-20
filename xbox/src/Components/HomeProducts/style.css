@@ -82,3 +82,23 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 500px) {
+    .homeProducts {
+        top: -20em;
+        padding: 1em;
+    }
+
+    .homeProducts::before {
+        background-size: auto;
+    }
+
+    .productFilters {
+        display: block;
+    }
+
+    .productFilters h3 {
+        font-size: 20px !important;
+        margin: 0 1em;
+    }
+}

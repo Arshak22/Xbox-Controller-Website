@@ -37,6 +37,18 @@ export default function Header() {
                                 FAQ
                             </NavLink>
                         </li>
+                        <li className="mobileHeaderBtns">
+                            <ImCart className="cartIcon"/>
+                        </li>
+                        <li className="mobileHeaderBtns">
+                            <NavLink to={ROUTE_NAMES.HOME} end className='neon-btn'>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Sign In
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="headerBtns">
