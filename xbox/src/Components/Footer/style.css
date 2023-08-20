@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     margin-top: 5em;
-    padding: 6em;
+    padding: 10em;
     padding-top: 0;
 }
 
@@ -42,7 +42,7 @@
 
 .footerLogo {
     margin: 0 auto;
-    width: 200px;
+    width: 150px;
 }
 
 .footerLogo img {
@@ -75,6 +75,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .footer {
+        padding: 5em;
+    }
+
     .footer::before {
         background-image: url(../../assets/images/BottomSmoke2.png);
         background-size: cover;

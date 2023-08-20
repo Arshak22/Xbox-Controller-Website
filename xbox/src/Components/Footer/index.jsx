@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <div className="footer">
             <div className="footerLogo">
-                <img src={Logo} alt='logo'/>
+                <NavLink to={ROUTE_NAMES.HOME} end><img src={Logo} alt='logo'/></NavLink>
             </div>
             <ul className="footerMenu">
                 <li>
