@@ -13,6 +13,12 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1920px) and (min-width: 1700px) {
+    .testimonials {
+        padding: 0em 12em;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .testimonials {
         padding: 0em 1em;

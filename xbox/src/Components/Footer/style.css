@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     margin-top: 5em;
-    padding: 8em;
+    padding: 6em;
     padding-top: 0;
 }
 
@@ -22,9 +22,8 @@
     bottom: 0;
     background-image: url(../../assets/images/BottomSmoke.png);
     background-position: top;
-    background-position-y: -31.3%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: inherit;
     filter: hue-rotate(85deg) contrast(1.2) brightness(0.8);
     z-index: -1;
     animation: contrastAnimation 2s infinite alternate;
@@ -78,5 +77,6 @@
 @media screen and (max-width: 500px) {
     .footer::before {
         background-image: url(../../assets/images/BottomSmoke2.png);
+        background-size: cover;
     }
 }
