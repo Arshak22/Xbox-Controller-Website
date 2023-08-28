@@ -11,3 +11,9 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 500px) {
+    .ShopIntro {
+        margin-top: -3em;
+    }
+}

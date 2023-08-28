@@ -216,3 +216,26 @@ input[name="range"]::-webkit-slider-thumb:after{
 .C12 {
     background-color: darkolivegreen;
 }
+
+@media screen and (max-width: 500px) {
+    .shopList {
+        display: block;
+    }
+    .colL, .colR {
+        width: 100%;
+    }
+    .colL {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .productType label {
+        margin-right: 30px;
+    }
+    .shopList .productFilters {
+        margin-top: 6em;
+        right: 0;
+    }
+    .shopList .featured, .shopList .bestSelling, .shopList .limitedEdition {
+        justify-content: center;
+    }
+}

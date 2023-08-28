@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 3em;
+    z-index: 5;
 }
 
 #mainLogo {
