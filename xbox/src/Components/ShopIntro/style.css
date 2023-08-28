@@ -1,0 +1,13 @@
+.ShopIntro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -5em;
+    z-index: 3;
+}
+
+.ShopIntro img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
