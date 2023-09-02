@@ -8,7 +8,7 @@ import Testimonials from "../../Components/Testimonials";
 
 export default function Home() {
     useEffect(() => {
-        document.title = "Xbox Gamepad Store";
+        document.title = "XperienceXPad";
     }, []);
     return(
         <div>
