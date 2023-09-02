@@ -1,6 +1,5 @@
 .FAQIntro {
-    margin-top: -4em;
-    padding: 0;
+    margin-top: -5em;
 }
 
 .QMark {
@@ -8,15 +7,15 @@
     width: 100%;
 }
 
-.colL {
+.colLF {
     width: 60%;
 }
 
-.colR {
+.colRF {
     width: 40%;
 }
 
-.colL h1 {
+.colLF h1 {
     color: var(--main-white);
     font-size: 73px;
     text-transform: uppercase;
@@ -28,10 +27,10 @@
     .FAQIntro {
         margin-top: -2em;
     }
-    .colL, .colR {
+    .colLF, .colRF {
         width: 100%;
     }
-    .colL h1 {
+    .colLF h1 {
         font-size: 45px;
     }
 }
