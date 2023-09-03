@@ -67,28 +67,6 @@ import P20_2 from '../../assets/images/products/20-2.png';
 
 export default function HomeProducts() {
     const [filter, setFilter] = useState('featured');
-    const product_list = [
-        {id: 1, name: 'Xbox One Custom Controller - Hex Edition', old_price: '$119.99', new_price: '$64.99', image: P1_1, hover_image: P1_2},
-        {id: 2, name: 'Xbox One Custom Controller - The Venom Edition', old_price: '$119.99', new_price: '$64.99', image: P2_1, hover_image: P2_2},
-        {id: 3, name: 'Xbox Series X Custom Controller - Blue Storm Edition', old_price: '$129.99', new_price: '$79.99', image: P3_1, hover_image: P3_2},
-        {id: 4, name: 'Xbox One Custom Controller - 3D Red Shadow Edition', old_price: '$129.99', new_price: '$79.99', image: P4_1, hover_image: P4_2},
-        {id: 5, name: 'Xbox One Custom Controller - Neo Storm Edition', old_price: '$129.99', new_price: '$64.99', image: P5_1, hover_image: P5_2},
-        {id: 6, name: 'Xbox Series X Custom Controller - Joker Edition', old_price: '$129.99', new_price: '$79.99', image: P6_1, hover_image: P6_2},
-        {id: 7, name: 'Xbox Series X Custom Controller - Octo Edition', old_price: '$129.99', new_price: '$79.99', image: P7_1, hover_image: P7_2},
-        {id: 8, name: 'Xbox Series X Custom Controller - Zombie Edition', old_price: '$119.99', new_price: '$79.99', image: P8_1, hover_image: P8_2},
-        {id: 9, name: 'Xbox Series X Custom Controller - Ancient Eye Edition', old_price: '$119.99', new_price: '$79.99', image: P9_1, hover_image: P9_2},
-        {id: 10, name: 'Xbox Series X Custom Controller - Blue Flame Edition', old_price: '$129.99', new_price: '$59.99', image: P10_1, hover_image: P10_2},
-        {id: 11, name: 'Xbox Series X Custom Controller - Red Raven Edition', old_price: '$129.99', new_price: '$79.99', image: P11_1, hover_image: P11_2},
-        {id: 12, name: 'Xbox Series X Custom Controller - Blue Splatter Edition', old_price: '$119.99', new_price: '$69.99', image: P12_1, hover_image: P12_2},
-        {id: 13, name: 'Xbox One Custom Controller - Biohazard Edition', old_price: '$119.99', new_price: '$69.99', image: P13_1, hover_image: P13_2},
-        {id: 14, name: 'Xbox Elite Series 2 Custom Controller - Ijen Edition', old_price: '$249.95', new_price: '$134.99', image: P14_1, hover_image: P14_2},
-        {id: 15, name: 'Xbox Series X Custom Controller - Mischief Edition', old_price: '$119.95', new_price: '$79.99', image: P15_1, hover_image: P15_2},
-        {id: 16, name: 'Xbox Series X Custom Controller - Wave Edition', old_price: '$119.95', new_price: '$79.99', image: P16_1, hover_image: P16_2},
-        {id: 17, name: 'Xbox Series X Custom Controller - Glitch Edition', old_price: '$129.95', new_price: '$79.99', image: P17_1, hover_image: P17_2},
-        {id: 18, name: 'Xbox One Custom Controller - Military Skull Edition', old_price: '$129.95', new_price: '$64.99', image: P18_1, hover_image: P18_2},
-        {id: 19, name: 'Xbox One Custom Controller - 3D Blue Shadow Edition', old_price: '$99.95', new_price: '$64.99', image: P19_1, hover_image: P19_2},
-        {id: 20, name: 'Xbox Series X Custom Controller - Dark Lord Edition', old_price: '$129.95', new_price: '$79.99', image: P20_1, hover_image: P20_2}
-    ];
     const featured = [
         {id: 1, name: 'Xbox One Custom Controller - Hex Edition', old_price: '$119.99', new_price: '$64.99', image: P1_1, hover_image: P1_2},
         {id: 2, name: 'Xbox One Custom Controller - The Venom Edition', old_price: '$119.99', new_price: '$64.99', image: P2_1, hover_image: P2_2},
