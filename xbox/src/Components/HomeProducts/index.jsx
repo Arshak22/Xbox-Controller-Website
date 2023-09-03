@@ -67,6 +67,7 @@ import P20_2 from '../../assets/images/products/20-2.png';
 
 export default function HomeProducts() {
     const [filter, setFilter] = useState('featured');
+    
     const featured = [
         {id: 1, name: 'Xbox One Custom Controller - Hex Edition', old_price: '$119.99', new_price: '$64.99', image: P1_1, hover_image: P1_2},
         {id: 2, name: 'Xbox One Custom Controller - The Venom Edition', old_price: '$119.99', new_price: '$64.99', image: P2_1, hover_image: P2_2},
